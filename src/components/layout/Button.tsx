@@ -1,12 +1,16 @@
 interface ButtonProps {
     onClick?: () => void;
+    className?: String;
 }
 
-export function Button ({onClick}: ButtonProps) {
+export function Button ({onClick, className}: ButtonProps) {
 
     return (
         <>
-            <button className="bg-[#0F172A] rounded-lg p-3 white text-[#FFFFFF] font-semibold" onClick={onClick}>Pesquisar</button>
+            <button
+            className={`${className || ""}`}
+             onClick={onClick}>Pesquisar</button>
+             
         </>
     )
 }

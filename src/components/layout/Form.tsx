@@ -10,7 +10,7 @@ export function Form() {
                     type="text"
                     placeholder="  Pesquise algum prato"
                 />
-                <Button />
+                <Button  className={"bg-[#0F172A] rounded-lg p-3 white text-[#FFFFFF] font-semibold cursor-pointer"}/>
             </form>
         </>
     )
